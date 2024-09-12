@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultraedit text-editor</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(36, 36, 36);
+            color: rgb(255, 253, 250);
+        }
+
+        nav {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            gap: 480px;
+        }
+
+        nav img {
+            color: white;
+            margin-left: 88px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        nav li {
+            list-style: none;
+            font-size: 19px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        /* nav close */
+        main {
+            display: flex;
+            height: 500px;
+            /* background-color: aliceblue; */
+        }
+
+        .section-1 {
+            height: 500px;
+            width: 650px;
+            /* background-color: blue; */
+            margin-left: 60px;
+        }
+
+        .section-1 img {
+            height: 125px;
+            width: 295px;
+            margin-left: 160px;
+            margin-top: 20px;
+        }
+
+        .section-1 p {
+            font-size: 20px;
+            margin-left: 170px;
+        }
+
+        .p-1 {
+            text-decoration: underline;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .p-1:hover {
+            text-decoration: none;
+        }
+
+        .btn-1 {
+            height: 101px;
+            width: 199px;
+            margin-left: 159px;
+            margin-top: 21px;
+            border-radius: 20px;
+            font-size: 25px;
+            background-color: rgb(8, 144, 197);
+            /* color: black; */
+        }
+
+        .btn-2 {
+            height: 101px;
+            width: 199px;
+            margin-left: 39px;
+            margin-top: 21px;
+            border-radius: 10px;
+            font-size: 25px;
+            cursor:col-resize;
+            /* background-color: rgb(8, 144, 197); */
+        }
+
+        .btn-1:hover {
+            background-color: rgb(47, 161, 206);
+            font-size: 28px;
+        }
+
+        .btn-2:hover {
+            font-size: 28px;
+            background-color: rgb(32, 31, 31);
+        }
+
+        .section-2 {
+            height: 500px;
+            width: 650px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .section-2 img {
+            margin-left: 110px;
+            margin-top: 30px;
+        }
+        .section-2 img{
+            transition: height 2s;
+            transition-duration: 2s;
+        }
+
+        .section-2 img:hover {
+            transition-duration: 2s;
+            height: 90%;
+        }
+        @media (max-width:800px) {
+            nav ul{
+                display: inline;
+
+            }
+            main{
+                display: inline;
+            }
+            .section-1 p{
+                font-size: 50px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="ultraedit2.png" alt="#">
+            <ul>
+                <li><a href="#"> Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section close -->
+    <main>
+        <div class="section-1">
+            <img src="ultraedit2.png" alt="#">
+            <span>
+                <p>A powerful and highly configurable text and hex editor with unrivaled support for large files. <span
+                        class="p-1"> Learn more.</span></p>
+            </span>
+            <button class="btn-1" type="submit">Download now</button>
+            <button class="btn-2" type="submit">BUY NOW</button>
+        </div>
+        <div class="section-2">
+            <img src="book.webp" alt="#">
+        </div>
+    </main>
+</body>
+
+</html>
